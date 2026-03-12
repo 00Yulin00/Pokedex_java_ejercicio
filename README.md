@@ -19,7 +19,7 @@ El sistema està dissenyat per ser robust i garantir la integritat de les dades 
 - Classe d'excepció personalitzada que hereta de `Exception`.
 - S'encarrega de gestionar els errors específics de format o lògica dels Pokémon sense capturar-los internament, delegant la responsabilitat a les classes de gestió.
 
-### 3. Lògica de Dades: `Ex2Array`
+### 3. Lògica de Dades: `Array`
 Conté els mètodes estàtics per processar la col·lecció:
 - **Lectura de Fitxer:** Llegeix un fitxer on la primera línia indica el total d'elements. Atura l'execució i indica la **línia exacta** i el **camp erroni** si el format no és correcte.
 - **`printPokedex`:** Mostra el llistat amb el format requerit:  
