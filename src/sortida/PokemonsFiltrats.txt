@@ -1,0 +1,4 @@
+Squirtle, Tipus: Aigua, Nivell: 5, PS: 44, Tengui
+Wartortle, Tipus: Aigua, Nivell: 16, PS: 59, Tengui
+Blastoise, Tipus: Aigua, Nivell: 36, PS: 79, Falti
+Psyduck, Tipus: Aigua, Nivell: 10, PS: 50, Tengui
