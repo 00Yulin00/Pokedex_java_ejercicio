@@ -49,5 +49,7 @@ L'exportació de dades genera línies amb el següent format de text net:
 ```text
 Charmander, Tipus: Foc, Nivell: 12, PS: 39, Tengui
 Squirtle, Tipus: Aigua, Nivell: 10, PS: 44, Falti
+```
+
 ---
 Projecte creat per 00Yulin00.
