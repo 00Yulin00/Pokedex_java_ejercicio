@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.PrintWriter;
 import java.util.Scanner;
 
-public class Ex2Array {
+public class Array {
 	public static Scanner teclat = new Scanner(System.in);
     public static void main(String[] args) {
         String rutaFitxer = "src/Pokedex.csv";
