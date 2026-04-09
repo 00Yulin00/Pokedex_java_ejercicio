@@ -95,13 +95,13 @@ public class Array {
         int nivellMin = llista[0].getNivell();
 
         for (int i = 0; i < llista.length; i++) {
-            if (llista[i].isCapturat()) {
+            if (llista[i] != null && llista[i].isCapturat()) {
             	capturats++;
             }
-            if (llista[i].getNivell() > nivellMax) {
+            if (llista[i] != null && llista[i].getNivell() > nivellMax) {
                 nivellMax = llista[i].getNivell();
             }
-            if (llista[i].getNivell() < nivellMin) {
+            if (llista[i] != null && llista[i].getNivell() < nivellMin) {
                 nivellMin = llista[i].getNivell();
             }
         }
