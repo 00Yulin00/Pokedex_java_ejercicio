@@ -1,6 +1,6 @@
 # 📱 Pokedex Java - Treballem amb Pokemons
 
-Aquest projecte és una aplicació de gestió de Pokédex desenvolupada en **Java**. Combina la manipulació de fitxers, el control d'excepcions personalitzades i la gestió d'estructures de dades (Arrays) seguint els principis de la **Programació Orientada a Objectes (POO)**.
+Aquest exercici és una aplicació de gestió de Pokédex desenvolupada en **Java**. Combina la manipulació de fitxers, el control d'excepcions personalitzades i la gestió d'estructures de dades (Arrays) seguint els principis de la **Programació Orientada a Objectes (POO)**.
 
 ---
 
