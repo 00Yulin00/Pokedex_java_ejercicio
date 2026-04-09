@@ -10,7 +10,8 @@ public class Pokemon {
 	public Pokemon(String nom, String tipus, String nivellStr, String psStr ,String capturat) throws DadesPokemonException {
         setNom(nom);
         setTipus(tipus);
-        setStats(nivellStr, psStr);
+        setNivell(nivellStr);
+        setPs(psStr);
         setCapturat(capturat);
     }
 	
@@ -30,20 +31,30 @@ public class Pokemon {
 	}
 
 
-	private void setStats(String nivellStr, String psStr) throws DadesPokemonException {
+	private void setNivell(String nivellStr) throws DadesPokemonException {
         try {
             int nivell = Integer.parseInt(nivellStr.trim());
-            int ps = Integer.parseInt(psStr.trim());
-            if (nivell < 1 || ps < 1) {
-                throw new DadesPokemonException("El nivell i els PS han de ser superiors a 0.");
+            if (nivell < 1) {
+                throw new DadesPokemonException("El nivell han de ser superiors a 0.");
             }
             this.nivell = nivell;
-            this.ps = ps;
         } catch (NumberFormatException e) {
-            throw new DadesPokemonException("El nivell o els PS han de ser números vàlids.");
+            throw new DadesPokemonException("El nivell han de ser números vàlids.");
         }
     }
 
+	private void setPs(String psStr) throws DadesPokemonException {
+        try {
+            int ps = Integer.parseInt(psStr.trim());
+
+            if (ps < 1) {
+                throw new DadesPokemonException("El PS han de ser superiors a 0.");
+            }
+            this.ps = ps;
+        } catch (NumberFormatException e) {
+            throw new DadesPokemonException("El PS han de ser números vàlids.");
+        }
+    }
 
 	private void setCapturat(String capturat) throws DadesPokemonException {
 		if (capturat.equalsIgnoreCase("true")) {
