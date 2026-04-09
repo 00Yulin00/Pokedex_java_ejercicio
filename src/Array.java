@@ -1,5 +1,3 @@
-
-
 import java.io.File;
 import java.io.PrintWriter;
 import java.util.Scanner;
@@ -11,7 +9,8 @@ public class Array {
         File fitxer = new File(rutaFitxer);
         
         int numLineas = 0;
-        try (Scanner lectorContador = new Scanner(fitxer)) {
+        try {
+        	Scanner lectorContador = new Scanner(fitxer);
             if (lectorContador.hasNextLine()) {
                 lectorContador.nextLine();
             }
@@ -21,6 +20,7 @@ public class Array {
                     numLineas++;
                 }
             }
+            lectorContador.close();
         } catch (Exception e) {
             System.out.println("Error al contar: " + e.getMessage());
             return;
@@ -29,7 +29,8 @@ public class Array {
         Pokemon[] pokedex = new Pokemon[numLineas];
         int liniaActual = 1;
 
-        try (Scanner lector = new Scanner(fitxer)) {
+        try {
+        	Scanner lector = new Scanner(fitxer);
         	if (lector.hasNextLine()) {
         	    lector.nextLine(); 
         	    liniaActual++;
@@ -53,11 +54,11 @@ public class Array {
                     return;
                 }
             }
-
+            lector.close();
             printPokedex(pokedex);
             getEstadistiques(pokedex);
             exportaAFitxer(pokedex);
-
+            
         } catch (Exception e) {
             System.out.println("Error al llegir el fitxer: " + e.getMessage());
         }
