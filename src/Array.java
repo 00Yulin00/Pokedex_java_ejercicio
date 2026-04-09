@@ -121,8 +121,7 @@ public class Array {
             System.out.print("Vols filtrar per (Tengui / Falti / Tots): ");
             String filtreEstat = teclat.nextLine().trim().toLowerCase();
 
-            File carpetaSortida = new File("src/sortida");
-            File fitxerSortida = new File(carpetaSortida, "PokemonsFiltrats.txt");
+            File fitxerSortida = new File("src/sortida/PokemonsFiltrats.txt");
 
             try (PrintWriter escriptor = new PrintWriter(fitxerSortida)) {
                 for (Pokemon p : llista) {
